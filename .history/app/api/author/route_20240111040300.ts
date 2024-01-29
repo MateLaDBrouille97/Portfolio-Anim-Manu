@@ -1,11 +1,11 @@
-import { NextResponse,NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
 // Import necessary modules
 
-export async function GET(req:NextRequest) {
+export async function GET(req:NextResponse) {
  
   try {
     const author = await prisma.author.findUnique({
