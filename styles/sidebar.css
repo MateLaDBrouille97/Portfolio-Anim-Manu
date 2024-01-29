@@ -1,0 +1,321 @@
+@media screen and (max-width: 413px) {
+    @media (max-width: 413px) {
+        .grid-side {
+          grid-template-columns: repeat(2, minmax(2, 1fr));
+        }
+      }
+}
+
+
+.tldraw__editor {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+  margin-top: 112px;
+  /* margin-left: 220px; */
+	width: 100%;
+	height: 84%;
+	overflow: hidden;
+}
+
+.custom-layout {
+	position: absolute;
+	inset: 0px;
+	z-index: 300;
+	pointer-events: none;
+}
+
+.custom-toolbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+	gap: 8px;
+}
+
+.custom-button {
+	pointer-events: all;
+	padding: 4px 12px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 64px;
+}
+
+.custom-button[data-isactive='true'] {
+	background-color: black;
+	color: white;
+}
+
+.button-editor{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+
+.makeRealButton {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: var(--color-primary);
+	color: white;
+	border: none;
+	font: inherit;
+	font-weight: 600;
+	padding: var(--space-3) var(--space-4);
+	border-radius: var(--radius-2);
+	margin: var(--space-3);
+	cursor: pointer;
+	pointer-events: all;
+}
+
+.makeRealButton:hover {
+	opacity: 0.95;
+}
+
+.logo_size{
+	margin-left:14px;
+}
+
+.navbar__conf{
+	display:flex;
+    
+	justify-items:center;
+	align-items:center;
+}
+
+.navbar_configurat{
+	padding:80px;
+}
+
+.left_side{
+	width:100%;
+	font-weight: 450;
+}
+
+.price-side_left{
+width:33%;
+height: 100%;
+
+
+}
+
+.price-side_center{
+	width:33%;
+	height: 100%;
+}
+
+.price-side_right{
+	width:33%;
+	height: 100%;
+}
+
+
+  
+  /* Apply flex item styles to each child div */
+  .price-side_left,
+  .price-side_center,
+  .price-side_right {
+	display: flex; /* This makes each div take up equal space within the flex container */
+  }
+
+@media screen and (max-width: 1350px) {
+
+	
+	
+	.tldraw__editor {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+	  margin-top: 112px;
+	  /* margin-left: 220px; */
+	  width: 94.5%;
+		height: 81%;
+		overflow: hidden;
+	}
+   
+	
+	}
+
+
+
+@media screen and (max-width: 950px) {
+
+  .tldraw__editor {
+   
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin-top: 112px;
+    /* margin-left: 220px; */
+    width: 100%;
+    height: 74%;
+    overflow: hidden;
+  }
+  
+.navbar_configurat{
+  padding:4px;
+}
+
+.left_side{
+	width:100%;
+}
+  
+.right_side{
+	width:100%;
+} 
+
+.price-side_left{
+	width:33%;
+	height: 100%;
+	padding:8px
+	
+	
+	}
+	
+	.price-side_center{
+		width:33%;
+		height: 100%;
+		padding:8px
+	}
+	
+	.price-side_right{
+		width:33%;
+		height: 100%;
+		padding:8px
+	}
+  
+}
+
+
+@media screen and (max-width: 750px) {
+
+	.tldraw__editor {
+	 
+	  top: 0px;
+	  left: 0px;
+	  bottom: 0px;
+	  right: 0px;
+	  margin-top: 112px;
+	  margin-left: 0px;
+	  width: 100%;
+	  height: 70%;
+	  overflow: hidden;
+	}
+	
+
+	
+	.logo_visibility{
+		display: none;
+	  }
+
+	  .price-section {
+		 /* Add this line to the price-section container */
+	  }
+  
+	  .price-side_left{
+		width:33%;
+		height: 100%;
+		padding:10px;
+		
+		
+		
+		}
+		
+		.price-side_center{
+			width:32%;
+			height: 100%;
+			padding:10px;
+			
+		}
+		
+		.price-side_right{
+			width:33%;
+			height: 100%;
+			padding:10px;
+			
+		}
+	  
+	
+	}
+  
+  
+  @media screen and (max-width: 450px) {
+
+	.tldraw__editor {
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+		margin-top: 112px;
+		margin-left: 0px;
+		width: 100%;
+		height: 84%;
+		overflow: hidden;
+	  }
+
+	.logo_visibility{
+      display: none;
+	}
+
+	.navbar_config{
+		width: 600px;
+	}
+    
+
+	.navbar_configurat{
+		
+		padding:0px;
+	  }
+
+	  .left_side{
+		width:100%;
+	}	  
+
+	  .right_side{
+		width:100%;
+	} 
+	
+	.price-side_left{
+		width:100%;
+		height: 100%;
+		
+		
+		}
+		
+		.price-side_center{
+			width:100%;
+			height: 100%;
+		}
+		
+		.price-side_right{
+			width:100%;
+			height: 100%;
+		}
+  }
+
+  /* @media screen and (max-height: 950px) {
+	.tldraw__editor {
+	 
+		top: 0px;
+		left: 0px;
+		bottom: 0px;
+		right: 0px;
+	
+		height: 84%;
+		
+	  }
+    
+  } */

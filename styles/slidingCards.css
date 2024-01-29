@@ -1,0 +1,21 @@
+.skills-section{
+  margin-bottom:4vh;
+
+}
+
+
+.slidingCard_container{
+margin-bottom:4vh;
+}
+
+@media screen and (max-width:680px){
+    .slidingCard_container{
+      /* margin-bottom: 30px; */
+      margin-left:10px;
+      margin-right:10px;
+    }
+
+    .slidingCard_text{
+        size: 12px;
+    }
+}
