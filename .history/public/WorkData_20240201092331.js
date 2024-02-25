@@ -69,7 +69,6 @@ export const projectImages=[
     {
         name:"Blog",
         image:"/BLOG2.png",
-        
     },
     {
         name:"Delivery App (User side)",
@@ -77,7 +76,7 @@ export const projectImages=[
     },
     {
         name:"Articles Management System",
-        image:"/Article.png",
+        image:"/FoodDelivery.png",
     },
     {
         name:"Chat with multiple PDFs",

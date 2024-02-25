@@ -69,7 +69,6 @@ export const projectImages=[
     {
         name:"Blog",
         image:"/BLOG2.png",
-        
     },
     {
         name:"Delivery App (User side)",
