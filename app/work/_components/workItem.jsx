@@ -8,7 +8,7 @@ import SlidingCards2 from "@/components/SlidingCards2";
 import Link from "next/link";
 import { projectImages } from "@/public/WorkData";
 
-function WorkItem({portfolio2}) {
+function WorkItem({ portfolio2 }) {
   const params = useParams();
   const router = useRouter();
 
@@ -17,6 +17,7 @@ function WorkItem({portfolio2}) {
   const [work, setWork] = useState();
   const [imageWork, setImageWork] = useState();
   const [imageWork2, setImageWork2] = useState();
+  const [videoWork, setVideoWork] = useState();
   const [workNextWork, setNextWork] = useState();
   const [workPreviousIndex, setWorkPreviousIndex] = useState();
 
@@ -32,31 +33,34 @@ function WorkItem({portfolio2}) {
     const image = getImageName(work?.title);
     setImageWork(image);
 
+    const video = getVideo(work?.title);
+    setVideoWork(video);
+
     const currentWorkIndex = portfolio2?.findIndex(
       (item) => item.id === params.workId
     );
 
-    console.log(currentWorkIndex)
-   
-
     // const previousWorkIndex = (currentWorkIndex + 1) % portfolio2.length;
     const nextWorkIndex = (currentWorkIndex + 1) % portfolio2.length;
-    console.log(nextWorkIndex)
 
     setNextWork(portfolio2[nextWorkIndex]);
     // setWorkPreviousIndex(portfolio2[previousWorkIndex]);
     const image2 = getImageName(workNextWork?.title);
     setImageWork2(image2);
 
-   
+    
   }, [portfolio2, params.workId, work?.title]);
-
-
 
   const getImageName = (projectName) => {
     const project = projectImages.filter((p) => p.name === projectName);
 
     return project ? project?.[0]?.image : null;
+  };
+
+  const getVideo = (projectName) => {
+    const project = projectImages.filter((p) => p.name === projectName);
+
+    return project ? project?.[0]?.video : null;
   };
 
   return (
@@ -78,13 +82,17 @@ function WorkItem({portfolio2}) {
           <div className="image-workItem">
             <Image src={imageWork} height={800} width={900} alt="" />
           </div>
-          {work?.addressPost?<Link href={work?.addressPost} legacyBehavior >
-            <div className="button-view-project">
+          {work?.addressPost ? (
+            <Link href={work?.addressPost} legacyBehavior>
+              <div className="button-view-project">
+                <div className="">Live Project</div>
+              </div>
+            </Link>
+          ) : (
+            <div className="button-view-project2 opacity-55">
               <div className="">Live Project</div>
             </div>
-          </Link>: <div className="button-view-project2 opacity-55">
-              <div className="">Live Project</div>
-            </div>}
+          )}
 
           <div className="stripe16" />
         </div>
@@ -99,6 +107,18 @@ function WorkItem({portfolio2}) {
         <div className="technologies-container">
           <SlidingCards2 data={work?.technologies} title="Technologies" />
         </div>
+
+      {videoWork?<div className="md:pt-2 pb-32 px-10">
+        <div className="items-center flex justify-center md:py-2">
+          <div className="text-center md:text-6xl text-4xl  bg-clip-text text-transparent pb-10 font-bold">
+            <div className="justify-center items-center flex md:pt-20 p-10 video-cover">
+              <video autoPlay muted loop>
+                <source src={videoWork} type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>:<div></div>}
 
         <div className="next-project">
           <div className="next-work-project">Next Case </div>

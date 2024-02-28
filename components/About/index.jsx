@@ -18,6 +18,7 @@ export default function About({ user1 }) {
     
     <div ref={description} className="about3">
       <div className="body">
+        
         <p>
           {phrase
             .split(" ")

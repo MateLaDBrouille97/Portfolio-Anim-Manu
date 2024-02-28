@@ -69,58 +69,77 @@ export const projectImages=[
     {
         name:"Blog",
         image:"/BLOG2.png",
+        video:"/OtomataBlog.mp4",
         
     },
     {
         name:"Delivery App (User side)",
         image:"/FoodDelivery.png",
+        video:"",
     },
     {
         name:"Articles Management System",
         image:"/Article.png",
+        video:"/ArticleBlog.mp4",
     },
     {
         name:"Chat with multiple PDFs",
         image:"/ChatwithmultiplePDFs.png",
+        video:"",
     },
     {
         name:"Path Finder",
         image:"/pathfinding.png",
+        video:"/PathFinder.mp4",
     },
     {
         name:"Fish Simulator",
         image:"/fishing.png",
+        video:"/poissons.mp4",
     },
     {
         name:"Crypto Exchange Market",
         image:"/crypto.png",
+        video:"",
     },
     {
         name:"Tasks/Projects Manager",
         image:"/Tasks.png",
+        video:"",
     },
     {
         name:"Stella: Voice Assistant with ChatGPT",
         image:"/Stella4.png",
+        video:"/Stella.mp4",
     },
     {
         name:"Autonomous Cooperative Agents",
         image:"/RolePlaying.png",
+        video:"",
     },
     {
         name:"Epidemic Simulation",
         image:"/EdipemicSimulation.png",
+        video:"/epidemy.mp4",
     },
     {
         name:"E-commerce",
         image:"/Ecommerce.png",
+        video:"",
     },
     {
         name:"Question Answering with your CSV file",
         image:"/PDFQuestionAnswering.png",
+        video:"",
     },
     {
         name:"Delivery App (Courier side)",
         image:"/FoodDelivery.png",
+        video:"",
+    },
+    {
+        name:"Lloyd",
+        image:"/Lloyd-Inc-972.png",
+        video:"/lloyd-edited1.mp4",
     },
 ]
