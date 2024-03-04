@@ -21,31 +21,31 @@
   }
 }
 
-.description4 {
+.description3 {
   padding-left: 10vw;
   padding-right: 10vw;
   // margin-top: 150px;
-  margin-bottom:100vh;
+  margin-bottom:10vh;
   max-width: 100vw;
   width: 100%;
   height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 
   @include respond(large) {
     height: 40vh;
   }
 
   @include respond(medium) {
-    height: 120vh;
+    height: 100vh;
     
   }
 
   @include respond(small) {
     height: 50vh;
-   
+    
   }
 
   @include respond(smaller) {
@@ -54,23 +54,40 @@
     padding-right: 5vw;
   }
 
-  .body4 {
+  .body3 {
     max-width: 1440px;
 
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
     position: relative;
 
-    @include respond(small) {
-      max-width: 450px;
-      width: 90%;
+    @include respond(large) {
+      height: 200px;
+    }
+  
+    @include respond(medium) {
+      height: 200px;
+      padding-left: 10px;
+      padding-right: 10px;
+      
     }
 
-    .description4_position {
+    @include respond(small) {
+      max-width: 100%;
+      width: 90%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    @include respond(smaller) {
+      height: 200px;
+      margin-top: 100px;
+    }
+
+
+    .description3_position {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -78,10 +95,13 @@
     }
     p {
       margin: 0px;
+      @include respond(smaller) {
+        letter-spacing: 3px;
+      }
       &:nth-of-type(1) {
         font-size: 36px;
         gap: 8px;
-        width: 90%;
+        width: 80%;
         line-height: 1.3;
         span {
           margin-right: 3px;
@@ -106,12 +126,12 @@
         }
 
         @include respond(smaller) {
-          font-size: 30px;
-          gap: 10px;
+          font-size: 16px;
+          gap: 12px;
         }
       }
       &:nth-of-type(2) {
-        font-size: 16px;
+        font-size: 18px;
         width: 80%;
         font-weight: 300;
         flex-direction: column-reverse;
@@ -124,7 +144,7 @@
 
         @include respond(smaller) {
           font-size: 14px;
-          gap: 10px;
+          gap: 12px;
         }
       }
     }

@@ -54,7 +54,7 @@ export default function Projects({portfolio}) {
         {portfolio.slice(0, 4).map((project, index) => {
           return (
             <Project
-            id={project.id}
+              id={project.id}
               index={index}
               title={project.title}
               type={project.type}

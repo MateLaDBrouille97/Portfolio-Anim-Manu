@@ -3,7 +3,7 @@
 import React,{ useState,useEffect } from "react";
 import Project from "../../components/Projects/_components/project";
 import ModalProject from "../../components/Projects/_components/modal";
-import { usePortfolioContext } from "@/contexts/PortfolioContext";
+// import { usePortfolioContext } from "@/contexts/PortfolioContext";
 import Link from "next/link";
 import Rounded from "../../common/RoundedButton";
 
@@ -31,18 +31,18 @@ const projects = [
 ];
 
 export default function Projects({portfolio}) {
-  const { data } = usePortfolioContext();
-  const [dataSort, setDataSort] = useState([]);
+  // const { data } = usePortfolioContext();
+  // const [dataSort, setDataSort] = useState([]);
 
-  useEffect(() => {
-    const data1 = data.sort((a, b) => {
-      if (b.createdAt > a.createdAt) return 1;
-      if (b.createdAt < a.createdAt) return -1;
-      return 0;
-    });
+  // useEffect(() => {
+  //   const data1 = data.sort((a, b) => {
+  //     if (b.createdAt > a.createdAt) return 1;
+  //     if (b.createdAt < a.createdAt) return -1;
+  //     return 0;
+  //   });
 
-    setDataSort(data1);
-  }, [data]);
+  //   setDataSort(data1);
+  // }, [data]);
 
   const [modal, setModal] = useState({ active: false });
 
@@ -54,7 +54,7 @@ export default function Projects({portfolio}) {
         {portfolio.slice(0, 4).map((project, index) => {
           return (
             <Project
-            id={project.id}
+              id={project.id}
               index={index}
               title={project.title}
               type={project.type}

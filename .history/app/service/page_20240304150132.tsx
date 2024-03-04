@@ -31,7 +31,7 @@ const ServicePage = () => {
 
 
   return (
-    <div className="main justify-center items-center ">
+    <div className="main justify-center items-center px-[2vw]">
       <Citation2 />
       <Service/>
       <Citation3/>

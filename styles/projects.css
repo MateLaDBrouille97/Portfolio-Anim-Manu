@@ -157,7 +157,7 @@
     align-items: center;
     justify-content: center;
     /* padding-top:vh; */
-    margin-bottom: 400vh;
+    margin-bottom: 420vh;
     z-index: 1000;
   }
 }
@@ -169,7 +169,7 @@
     align-items: center;
     justify-content: center;
     /* padding-top:vh; */
-    margin-bottom: 90vh;
+    margin-bottom: 95vh;
     z-index: 1000;
   }
 
@@ -185,14 +185,14 @@
 
   .main11 {
     
-    margin-bottom:50vh;
+    margin-bottom:65vh;
     
   }
 
   .main7 {
    
     /* margin-top: 20vh; */
-    margin-bottom: 60vh;
+    margin-bottom: 70vh;
     
   }
 }
